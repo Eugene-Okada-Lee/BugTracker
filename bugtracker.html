@@ -1,155 +1,141 @@
 <!DOCTYPE html>
-<!Header and title of the entire project>
-<html>
-
-
-    <style>
-h1 {text-align: center
-  color: white;}
-p {text-align: center;}
-div {text-align: center;}
-body {bgcolor:"#1C222D";}
-.header {
-  position: fixed;
-  left: 0;
-  top: 0;
-  width: 100%;
-  background-color: teal;
-  color: white;
-  text-align: center;
-  }
-</style>
+<! The header and all the information for our file>
+<html lang="en">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bug Tracker Project </title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
-  </head>
-  <body>
+    <title>Bug Tracker Project </title>
+    <link href="bugtracker.css" rel="stylesheet">
+    <script defer src="bugtracker.js"></script>
+</head>
+</head>
+<body>
   <div class="header">
-  <section class="section">
+    <section class="section">
       <div class="container">
         <h1 class="title is-centered">
-          Bug Tracker <strong>Version 1.0</strong>
-            <div class="button"> Add A Ticket</div>
-            <div class="button"> profile</div>
+         Bug Tracker <strong>Version 2.0</strong>
+         <button data-ticket-target="#ticket">Add a Ticket</button>
+         <div class="ticket active" id="ticket">
+           <div class="ticket-header">
+             <div class="title">Ticket Description</div>
+             <button data-close-button class="close-button">&times;</button>
+           </div>
+           <div class="ticket-body">
+              <form class="signin">
+              <input type="text">
+              </form>
+           </div>
+          </div>
+         <div class= "active" id="overlay"></div>
         </h1>
       </div>
     </section>
   </div>
+</body>
 
-  <div class="body">
-    <section class="section">
-      <div class="subtitle">
-        <h1>  mock <strong> layout </strong></h1>
+<!insert the shit i deleted back in here>
+<div class="body">
+  <section class="section">
+    <div class="subtitle">
+      <h1>  mock <strong> layout </strong></h1>
+    </p>
+  </div>
+<section class="section">
+<div class="columns is-multiline is-centered">
+  <div class="buttons">
+    <div class="columns"> </div>
+    <div class="column is-on-quarter-fullhd is-3 "> READY TO START<br>
+
+      <div class="box">
+<article class="Ticket">
+  <div class="Ticket-content">
+    <div class="content">
+      <p>
+        <strong>Name of User</strong> <i><br>
+          <small> Ticket-ID# </i></small><br>
+        time stamp
+        <br>
+      Ticket discription
+      <br>
       </p>
     </div>
-<section class="section">
-  <div class="columns is-multiline is-centered">
-    <div class="buttons">
-      <div class="columns"> </div>
-      <div class="column is-on-quarter-fullhd is-3 "> READY TO START<br>
-
-        <div class="box">
-  <article class="Ticket">
-    <div class="Ticket-content">
-      <div class="content">
-        <p>
-          <strong>Name of User</strong> <i><br>
-            <small> Ticket-ID# </i></small><br>
-          time stamp
-          <br>
-        Ticket discription
-        <br>
-        </p>
-      </div>
-    <div class="button is-danger is-focused"> edit </div>
-    </div>
-  </article>
-</div>
-      </div>
-
-
-      <div class="column is-one-quarter-fullhd is-3"> IN PROGRESS <br>
-        <div class="box">
-    <article class="Ticket">
-    <div class="Ticket-content">
-      <div class="content">
-        <p>
-          <strong>Name of User</strong> <i><br>
-            <small> Ticket-ID# </i></small><br>
-          time stamp
-          <br>
-        Ticket discription
-        <br>
-        </p>
-      </div>
-    <div class="button is-warning is-focused"> edit </div>
-    </div>
-    </article>
-    </div>
-      </div>
-
-      <div class="column is-one-quarter-fullhd is-3"> REVIEW <br>
-        <div class="box">
-    <article class="Ticket">
-    <div class="Ticket-content">
-      <div class="content">
-        <p>
-          <strong>Name of User</strong> <i><br>
-            <small> Ticket-ID# </i></small><br>
-          time stamp
-          <br>
-        Ticket discription
-        <br>
-        </p>
-      </div>
-    <div class="button is-link is-focused"> edit </div>
-    </div>
-    </article>
-    </div>
-      </div>
-
-      <div class="column is-one-quarter-fullhd is-3"> COMPLETE <br>
-        <div class="box">
-    <article class="Ticket">
-    <div class="Ticket-content">
-      <div class="content">
-        <p>
-          <strong>Name of User</strong> <i><br>
-            <small> Ticket-ID# </i></small><br>
-          time stamp
-          <br>
-        Ticket discription
-        <br>
-        </p>
-      </div>
-    <div class="button is-success is-focused"> edit </div>
-    </div>
-    </article>
-    </div>
-      </div>
-
-    </div>
+  <div class="button is-danger is-focused"> edit </div>
   </div>
+</article>
+</div>
+    </div>
 
-  </section>
-  </body>
-  <style>
-  .footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  background-color: teal;
-  color: white;
-  text-align: center;
-}
-</style>
+
+    <div class="column is-one-quarter-fullhd is-3"> IN PROGRESS <br>
+      <div class="box">
+  <article class="Ticket">
+  <div class="Ticket-content">
+    <div class="content">
+      <p>
+        <strong>Name of User</strong> <i><br>
+          <small> Ticket-ID# </i></small><br>
+        time stamp
+        <br>
+      Ticket discription
+      <br>
+      </p>
+    </div>
+  <div class="button is-warning is-focused"> edit </div>
+  </div>
+  </article>
+  </div>
+    </div>
+
+    <div class="column is-one-quarter-fullhd is-3"> REVIEW <br>
+      <div class="box">
+  <article class="Ticket">
+  <div class="Ticket-content">
+    <div class="content">
+      <p>
+        <strong>Name of User</strong> <i><br>
+          <small> Ticket-ID# </i></small><br>
+        time stamp
+        <br>
+      Ticket discription
+      <br>
+      </p>
+    </div>
+  <div class="button is-link is-focused"> edit </div>
+  </div>
+  </article>
+  </div>
+    </div>
+
+    <div class="column is-one-quarter-fullhd is-3"> COMPLETE <br>
+      <div class="box">
+  <article class="Ticket">
+  <div class="Ticket-content">
+    <div class="content">
+      <p>
+        <strong>Name of User</strong> <i><br>
+          <small> Ticket-ID# </i></small><br>
+        time stamp
+        <br>
+      Ticket discription
+      <br>
+      </p>
+    </div>
+  <div class="button is-success is-focused"> edit </div>
+  </div>
+  </article>
+  </div>
+    </div>
+
+  </div>
+</div>
 
 <div class="footer">
   <p>Version 1.0</p><br>
   <p> August 11th, 2021</p>
 </div>
+
 
 </html>
