@@ -1,1 +1,95 @@
-index.class
+.header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  background-color: teal;
+  color: white;
+  text-align: center;
+  }
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: teal;
+  color: white;
+  text-align: center;
+}
+
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+#signin {
+  position:absolute;
+  min-width:22%;
+  height 20%;
+  top:0%;
+  right:0%;
+  z-index:10;
+  background-color:#CCC;
+  border: 1px solid grey;
+}
+
+.ticket {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate( -50%, -50%) scale(0);
+  transition: 200ms ease-in-out;
+  border: 1px solid black;
+  border-radius: 10px;
+  z-index: 10;
+  background-color: white;
+  width: 500px;
+  max-width: 80%;
+  }
+
+.ticket.active {
+  transform: translate( -50%, -50%) scale(1);
+}
+
+.ticket-header {
+  padding: 10px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid black;
+}
+
+.ticket-header .title{
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+s
+.ticket-header .close-button{
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.ticket-body {
+  padding: 10px 15px;
+  font-size: 1rem;
+  font-weight: lighter;
+}
+
+.overlay {
+  position: fixed;
+  opacity: 0;
+  transition: 200ms ease-in-out;
+  top:0;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0);
+  pointer-events: none;
+}
+.overlay.active{
+  opacity: 1;
+  pointer-events: all;
+
+}
