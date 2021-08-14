@@ -5,7 +5,7 @@ const overlay = document.getElementById('overlay')
 openTicketButtons.forEach(button => {
   button.addEventListener('click', () => {
     const ticket = document.querySelector(button.dataset.ticketTarget)
-    openTicket(Ticket)
+    openTicket(ticket)
   })
 })
 
