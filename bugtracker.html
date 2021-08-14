@@ -16,7 +16,7 @@
     <section class="section">
       <div class="container">
         <h1 class="title is-centered">
-         Bug Tracker <strong>Version 2.0</strong>
+         Bug Tracker <br><br>
          <button data-ticket-target="#ticket" class="button is-focused">Add a Ticket</button>
          <div class="ticket" id="ticket">
            <div class="ticket-header">
@@ -24,9 +24,48 @@
              <button data-close-button class="close-button">&times;</button>
            </div>
            <div class="ticket-body">
+            <div class="field">
+              <label class="label">Username</label>
+              <div class="control has-icons-left has-icons-right">
+                <input class="input is-success" type="text" placeholder="Text input" value="">
+                <span class="icon is-small is-left">
+                  <i class="fas fa-user"></i>
+                </span>
+                <span class="icon is-small is-right">
+                  <i class="fas fa-check"></i>
+                </span>
+              </div>
+              <p class="help is-success">This username is available</p>
+            </div>
+            <div class="field">
+              <label class="label">Title for Ticket</label>
+              <div class="control">
+                <input class="input" type="text" placeholder="Text input">
+              </div>
+            </div>
+            
+            <div class="field">
+              <label class="label">Where to begin</label>
+              <div class="control">
+                <div class="select">
+                  <select>
+                    <option>Ready to Start</option>
+                    <option>In Progress</option>
+                    <option>Review</option>
+                    <option>Complete</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="field"> 
+              <label class="label">Ticket Description<br></label>
               <form>
-              <textarea class="textarea" placeholder="e.g. bug description" rows="5" cols="20"></textarea>
-              </form>
+              <textarea class="textarea" placeholder="e.g. Hello world" rows="5" cols="20"></textarea>
+              </form></div>
+              <div class="field">
+                <div class="control">
+                  <button class="button is-link">Submit</button>
+                </div>
            </div>
           </div>
          <div id="overlay"></div>
@@ -38,101 +77,41 @@
 <div class="body">
   <section class="section">
     <div class="subtitle">
-      <h1>  mock <strong> layout </strong></h1>
+      
+      <br>
+      <br>
+      <br>
+      <br>
     </p>
   </div>
 <section class="section">
-<div class="columns is-multiline is-centered">
-  <div class="buttons">
-    <div class="columns"> </div>
-    <div class="column is-on-quarter-fullhd is-3 "> READY TO START<br>
-
-      <div class="box">
-<article class="Ticket">
-  <div class="Ticket-content">
-    <div class="content">
-      <p>
-        <strong>Name of User</strong> <i><br>
-          <small> Ticket-ID# </i></small><br>
-        time stamp
+<div class="row">  
+  <div class="columns is-multiline is-centered">
+      <div class="columns"> </div>
+    
+      <div class="column is-one-quarter-fullhd is-3 "> <u>READY TO START</u>
         <br>
-      Ticket discription
-      <br>
-      </p>
-    </div>
-  <div class="button is-danger is-focused"> edit </div>
-  </div>
-</article>
-</div>
+    <!deleted 1>
     </div>
 
-
-    <div class="column is-one-quarter-fullhd is-3"> IN PROGRESS <br>
-      <div class="box">
-  <article class="Ticket">
-  <div class="Ticket-content">
-    <div class="content">
-      <p>
-        <strong>Name of User</strong> <i><br>
-          <small> Ticket-ID# </i></small><br>
-        time stamp
-        <br>
-      Ticket discription
-      <br>
-      </p>
-    </div>
-  <div class="button is-warning is-focused"> edit </div>
-  </div>
-  </article>
-  </div>
+    <div class="column is-one-quarter-fullhd is-3"> <u>IN PROGRESS</u> <br>
+    <!deleted 2>
     </div>
 
-    <div class="column is-one-quarter-fullhd is-3"> REVIEW <br>
-      <div class="box">
-  <article class="Ticket">
-  <div class="Ticket-content">
-    <div class="content">
-      <p>
-        <strong>Name of User</strong> <i><br>
-          <small> Ticket-ID# </i></small><br>
-        time stamp
-        <br>
-      Ticket discription
-      <br>
-      </p>
-    </div>
-  <div class="button is-link is-focused"> edit </div>
-  </div>
-  </article>
-  </div>
+    <div class="column is-one-quarter-fullhd is-3"> <u>NEEDS REVIEW</u><br>
+    <!deleted 3>
     </div>
 
-    <div class="column is-one-quarter-fullhd is-3"> COMPLETE <br>
-      <div class="box">
-  <article class="Ticket">
-  <div class="Ticket-content">
-    <div class="content">
-      <p>
-        <strong>Name of User</strong> <i><br>
-          <small> Ticket-ID# </i></small><br>
-        time stamp
-        <br>
-      Ticket discription
-      <br>
-      </p>
-    </div>
-  <div class="button is-success is-focused"> edit </div>
-  </div>
-  </article>
-  </div>
+    <div class="column is-one-quarter-fullhd is-3"> <u> COMPLETE</u><br>
+     <!deleted 4>
     </div>
 
   </div>
 </div>
 
 <div class="footer">
-  <p>Version 1.0</p><br>
-  <p> August 11th, 2021</p>
+  <p>Version 1.1</p><br>
+  <p> August 13th, 2021</p>
 </div>
 </body>
 
